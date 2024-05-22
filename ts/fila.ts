@@ -20,7 +20,7 @@ export function dequeue(queue: any[]) {
 
   const firstValue = queue[0];
 
-  for (let i = 0; i < queue.length - 1; i++) {
+  for (let i = 0; i < queue.length; i++) {
     queue[i] = queue[i + 1];
   }
 
