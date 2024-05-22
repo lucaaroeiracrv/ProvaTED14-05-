@@ -55,7 +55,7 @@ const fileiras: Fileira[] = [
 function colocar(alunos: Aluno[], fileiras: Fileira[]) {
     fileiras.forEach(a => {
       for (let i = 0; i < a.length; i++) {
-        if( a.alunos[i] === undefined){
+        if( a.alunos[i] === undefined && alunos[0] != undefined){
           a.alunos[i]= alunos[0]
           console.log("Olá " + alunos[0].nome + "! Você agora está na fileira " + a.nomeFileira + ".");
           metodosFila.dequeue(alunos);
