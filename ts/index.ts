@@ -70,7 +70,7 @@ function tirar(fileiras: Fileira[]){
   fileiras.forEach(a =>{
     for(let i = 0; i < a.length; ++i){
         if(a.alunos[0] !== undefined){
-          console.log(`Até logo, ${a.alunos[0].nome}! Ainda restam ${a.alunos.length - 1} alunos na fileira ${a.nomeFileira}.`);
+          console.log(`Até logo, ${a.alunos[0].nome}! Ainda restam ${metodosFila.size(a.alunos) - 1} alunos na fileira ${a.nomeFileira}.`);
             metodosFila.dequeue(a.alunos)
           }
           
